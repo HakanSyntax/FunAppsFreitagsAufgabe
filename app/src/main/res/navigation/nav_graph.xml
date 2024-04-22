@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="de.syntax_institut.funappsvorlage.ui.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="de.syntax_institut.funappsvorlage.ui.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <argument
+            android:name="artistName"
+            app:argType="string" />
+        <argument
+            android:name="trackName"
+            app:argType="string" />
+        <argument
+            android:name="artworkUrl100"
+            app:argType="string" />
+        <argument
+            android:name="trackTimeMillis"
+            app:argType="integer" />
+        <argument
+            android:name="primaryGenreName"
+            app:argType="string" />
+        <argument
+            android:name="releaseDate"
+            app:argType="string" />
+        <argument
+            android:name="trackPrice"
+            app:argType="string" />
+    </fragment>
+</navigation>

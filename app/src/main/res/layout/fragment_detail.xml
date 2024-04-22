@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tvCoverCard"
+        android:layout_width="153dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="120dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tvCoverImgDetail"
+            android:layout_width="143dp"
+            android:layout_height="141dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tvTrackNameDetail1"
+        android:layout_width="296dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="59dp"
+        android:text="Banana Pancakes"
+        android:textAlignment="center"
+        android:textColor="@color/SI_DeepPurple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCoverCard" />
+
+    <TextView
+        android:id="@+id/tvArtistNameDetail1"
+        android:layout_width="276dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Jack Johnson"
+        android:textAlignment="center"
+        android:textColor="@color/SI_DeepPurple"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrackNameDetail1" />
+
+    <TextView
+        android:id="@+id/tvGenreDetail1"
+        android:layout_width="118dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="56dp"
+        android:text="Genre"
+        android:textAlignment="textEnd"
+        android:textColor="@color/SI_DeepPurple"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvArtistNameDetail1" />
+
+    <TextView
+        android:id="@+id/tvGenreDetail2"
+        android:layout_width="96dp"
+        android:layout_height="37dp"
+        android:text="Rock"
+        android:textAlignment="center"
+        android:textColor="@color/SI_DeepPurple"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tvGenreDetail1"
+        app:layout_constraintTop_toBottomOf="@+id/tvArtistNameDetail1" />
+
+    <TextView
+        android:id="@+id/tvLangeDetail1"
+        android:layout_width="118dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="58dp"
+        android:text="Länge"
+        android:textAlignment="textEnd"
+        android:textColor="@color/SI_DeepPurple"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenreDetail1" />
+
+    <TextView
+        android:id="@+id/tvLangeDetail2"
+        android:layout_width="96dp"
+        android:layout_height="37dp"
+        android:text="02:02"
+        android:textAlignment="center"
+        android:textColor="@color/SI_DeepPurple"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tvLangeDetail1"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenreDetail2" />
+
+    <TextView
+        android:id="@+id/tvVeroffentlichtDetail1"
+        android:layout_width="118dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="58dp"
+        android:text="Veröffentlicht"
+        android:textAlignment="textEnd"
+        android:textColor="@color/SI_DeepPurple"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLangeDetail1" />
+
+    <TextView
+        android:id="@+id/tvVeroffentlichtDetail2"
+        android:layout_width="207dp"
+        android:layout_height="37dp"
+        android:text="01.01.1970"
+        android:textAlignment="center"
+        android:textColor="@color/SI_DeepPurple"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tvVeroffentlichtDetail1"
+        app:layout_constraintTop_toBottomOf="@+id/tvLangeDetail2" />
+
+    <TextView
+        android:id="@+id/tvPreisDetail1"
+        android:layout_width="118dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="58dp"
+        android:text="Preis"
+        android:textAlignment="textEnd"
+        android:textColor="@color/SI_DeepPurple"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVeroffentlichtDetail1" />
+
+    <TextView
+        android:id="@+id/tvPreisDetail2"
+        android:layout_width="96dp"
+        android:layout_height="37dp"
+        android:text="1.29 €"
+        android:textAlignment="center"
+        android:textColor="@color/SI_DeepPurple"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/tvPreisDetail1"
+        app:layout_constraintTop_toBottomOf="@+id/tvVeroffentlichtDetail2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
